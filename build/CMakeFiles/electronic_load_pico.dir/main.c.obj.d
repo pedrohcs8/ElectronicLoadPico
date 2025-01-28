@@ -72,5 +72,5 @@ CMakeFiles/electronic_load_pico.dir/main.c.obj: \
  /home/pedrohcs8/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/clocks.h \
  /home/pedrohcs8/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/clocks.h \
  /home/pedrohcs8/Documents/picoProjects/electronic_load_pico/i2c_lcd_lib.h \
- /home/pedrohcs8/Documents/picoProjects/electronic_load_pico/ads1115_lib.h \
+ /home/pedrohcs8/Documents/picoProjects/electronic_load_pico/ads1015_lib.h \
  /home/pedrohcs8/Documents/picoProjects/electronic_load_pico/mcp4725_lib.h

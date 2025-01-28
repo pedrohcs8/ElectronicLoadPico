@@ -51,12 +51,12 @@
       "-v",
       "-c",
       "-o",
-      "CMakeFiles/cmTC_3c3cb.dir/CMakeCCompilerABI.c.o",
+      "CMakeFiles/cmTC_4b336.dir/CMakeCCompilerABI.c.o",
       "/usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c"
     ],
     "directory": "/home/pedrohcs8/Documents/picoProjects/electronic_load_pico/build/elf2uf2/CMakeFiles/CMakeTmp",
     "file": "/usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c",
-    "output": "/home/pedrohcs8/Documents/picoProjects/electronic_load_pico/build/elf2uf2/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_3c3cb.dir/CMakeCCompilerABI.c.o"
+    "output": "/home/pedrohcs8/Documents/picoProjects/electronic_load_pico/build/elf2uf2/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_4b336.dir/CMakeCCompilerABI.c.o"
   },
   {
     "arguments": [
@@ -64,12 +64,12 @@
       "-v",
       "-c",
       "-o",
-      "CMakeFiles/cmTC_2d566.dir/CMakeCXXCompilerABI.cpp.o",
+      "CMakeFiles/cmTC_52d8f.dir/CMakeCXXCompilerABI.cpp.o",
       "/usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp"
     ],
     "directory": "/home/pedrohcs8/Documents/picoProjects/electronic_load_pico/build/elf2uf2/CMakeFiles/CMakeTmp",
     "file": "/usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp",
-    "output": "/home/pedrohcs8/Documents/picoProjects/electronic_load_pico/build/elf2uf2/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_2d566.dir/CMakeCXXCompilerABI.cpp.o"
+    "output": "/home/pedrohcs8/Documents/picoProjects/electronic_load_pico/build/elf2uf2/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_52d8f.dir/CMakeCXXCompilerABI.cpp.o"
   },
   {
     "arguments": [
@@ -302,12 +302,12 @@
       "-std=gnu11",
       "-c",
       "-o",
-      "CMakeFiles/electronic_load_pico.dir/ads1115_lib.c.obj",
-      "/home/pedrohcs8/Documents/picoProjects/electronic_load_pico/ads1115_lib.c"
+      "CMakeFiles/electronic_load_pico.dir/ads1015_lib.c.obj",
+      "/home/pedrohcs8/Documents/picoProjects/electronic_load_pico/ads1015_lib.c"
     ],
     "directory": "/home/pedrohcs8/Documents/picoProjects/electronic_load_pico/build",
-    "file": "/home/pedrohcs8/Documents/picoProjects/electronic_load_pico/ads1115_lib.c",
-    "output": "/home/pedrohcs8/Documents/picoProjects/electronic_load_pico/build/CMakeFiles/electronic_load_pico.dir/ads1115_lib.c.obj"
+    "file": "/home/pedrohcs8/Documents/picoProjects/electronic_load_pico/ads1015_lib.c",
+    "output": "/home/pedrohcs8/Documents/picoProjects/electronic_load_pico/build/CMakeFiles/electronic_load_pico.dir/ads1015_lib.c.obj"
   },
   {
     "arguments": [
@@ -8651,7 +8651,7 @@
       "-Wl,--wrap=putchar",
       "-Wl,--wrap=getchar",
       "CMakeFiles/electronic_load_pico.dir/i2c_lcd_lib.c.obj",
-      "CMakeFiles/electronic_load_pico.dir/ads1115_lib.c.obj",
+      "CMakeFiles/electronic_load_pico.dir/ads1015_lib.c.obj",
       "CMakeFiles/electronic_load_pico.dir/mcp4725_lib.c.obj",
       "CMakeFiles/electronic_load_pico.dir/main.c.obj",
       "CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj",
@@ -8748,12 +8748,12 @@
       "-v",
       "-c",
       "-o",
-      "CMakeFiles/cmTC_a2142.dir/CMakeCXXCompilerABI.cpp.o",
+      "CMakeFiles/cmTC_cf106.dir/CMakeCXXCompilerABI.cpp.o",
       "/usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp"
     ],
     "directory": "/home/pedrohcs8/Documents/picoProjects/electronic_load_pico/build/pioasm/CMakeFiles/CMakeTmp",
     "file": "/usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp",
-    "output": "/home/pedrohcs8/Documents/picoProjects/electronic_load_pico/build/pioasm/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_a2142.dir/CMakeCXXCompilerABI.cpp.o"
+    "output": "/home/pedrohcs8/Documents/picoProjects/electronic_load_pico/build/pioasm/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_cf106.dir/CMakeCXXCompilerABI.cpp.o"
   },
   {
     "arguments": [

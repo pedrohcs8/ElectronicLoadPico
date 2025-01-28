@@ -12,7 +12,7 @@ pico_sdk_init()
 
 add_executable(${PROJECT_NAME}
     i2c_lcd_lib.c
-    ads1115_lib.c
+    ads1015_lib.c
     mcp4725_lib.c
     main.c
 )

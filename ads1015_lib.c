@@ -3,7 +3,7 @@
 #include "hardware/i2c.h"
 #include "hardware/gpio.h"
 
-#include "ads1115_lib.h"
+#include "ads1015_lib.h"
 
 int ads_addr_write;
 int selected_gain;
@@ -59,15 +59,15 @@ int16_t readConversionReg() {
 double computeVolts(int raw, bool miliVolts, uint8_t pga_config) {
   if (pga_config == gain6v) {
     if (miliVolts) {
-      return (raw * 0.1875);
+      return (raw * 0.125);
     } else {
-      return (raw * 0.1875) / 100;
+      return (raw * 0.125) / 100;
     }
   } else if (pga_config == gain0256v) {
     if (miliVolts) {
-      return (raw * 0.0078125);
+      return (raw * 0.125);
     } else {
-      return (raw * 0.0078125) / 1000;
+      return (raw * 0.125) / 1000;
     }
   }
 }

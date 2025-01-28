@@ -83,19 +83,19 @@ CMakeFiles/electronic_load_pico.dir/i2c_lcd_lib.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/electronic_load_pico.dir/i2c_lcd_lib.c.s"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pedrohcs8/Documents/picoProjects/electronic_load_pico/i2c_lcd_lib.c -o CMakeFiles/electronic_load_pico.dir/i2c_lcd_lib.c.s
 
-CMakeFiles/electronic_load_pico.dir/ads1115_lib.c.obj: CMakeFiles/electronic_load_pico.dir/flags.make
-CMakeFiles/electronic_load_pico.dir/ads1115_lib.c.obj: ../ads1115_lib.c
-CMakeFiles/electronic_load_pico.dir/ads1115_lib.c.obj: CMakeFiles/electronic_load_pico.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohcs8/Documents/picoProjects/electronic_load_pico/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/electronic_load_pico.dir/ads1115_lib.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/electronic_load_pico.dir/ads1115_lib.c.obj -MF CMakeFiles/electronic_load_pico.dir/ads1115_lib.c.obj.d -o CMakeFiles/electronic_load_pico.dir/ads1115_lib.c.obj -c /home/pedrohcs8/Documents/picoProjects/electronic_load_pico/ads1115_lib.c
+CMakeFiles/electronic_load_pico.dir/ads1015_lib.c.obj: CMakeFiles/electronic_load_pico.dir/flags.make
+CMakeFiles/electronic_load_pico.dir/ads1015_lib.c.obj: ../ads1015_lib.c
+CMakeFiles/electronic_load_pico.dir/ads1015_lib.c.obj: CMakeFiles/electronic_load_pico.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohcs8/Documents/picoProjects/electronic_load_pico/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/electronic_load_pico.dir/ads1015_lib.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/electronic_load_pico.dir/ads1015_lib.c.obj -MF CMakeFiles/electronic_load_pico.dir/ads1015_lib.c.obj.d -o CMakeFiles/electronic_load_pico.dir/ads1015_lib.c.obj -c /home/pedrohcs8/Documents/picoProjects/electronic_load_pico/ads1015_lib.c
 
-CMakeFiles/electronic_load_pico.dir/ads1115_lib.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/electronic_load_pico.dir/ads1115_lib.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pedrohcs8/Documents/picoProjects/electronic_load_pico/ads1115_lib.c > CMakeFiles/electronic_load_pico.dir/ads1115_lib.c.i
+CMakeFiles/electronic_load_pico.dir/ads1015_lib.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/electronic_load_pico.dir/ads1015_lib.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pedrohcs8/Documents/picoProjects/electronic_load_pico/ads1015_lib.c > CMakeFiles/electronic_load_pico.dir/ads1015_lib.c.i
 
-CMakeFiles/electronic_load_pico.dir/ads1115_lib.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/electronic_load_pico.dir/ads1115_lib.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pedrohcs8/Documents/picoProjects/electronic_load_pico/ads1115_lib.c -o CMakeFiles/electronic_load_pico.dir/ads1115_lib.c.s
+CMakeFiles/electronic_load_pico.dir/ads1015_lib.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/electronic_load_pico.dir/ads1015_lib.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pedrohcs8/Documents/picoProjects/electronic_load_pico/ads1015_lib.c -o CMakeFiles/electronic_load_pico.dir/ads1015_lib.c.s
 
 CMakeFiles/electronic_load_pico.dir/mcp4725_lib.c.obj: CMakeFiles/electronic_load_pico.dir/flags.make
 CMakeFiles/electronic_load_pico.dir/mcp4725_lib.c.obj: ../mcp4725_lib.c
@@ -1111,7 +1111,7 @@ CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/
 # Object files for target electronic_load_pico
 electronic_load_pico_OBJECTS = \
 "CMakeFiles/electronic_load_pico.dir/i2c_lcd_lib.c.obj" \
-"CMakeFiles/electronic_load_pico.dir/ads1115_lib.c.obj" \
+"CMakeFiles/electronic_load_pico.dir/ads1015_lib.c.obj" \
 "CMakeFiles/electronic_load_pico.dir/mcp4725_lib.c.obj" \
 "CMakeFiles/electronic_load_pico.dir/main.c.obj" \
 "CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj" \
@@ -1190,7 +1190,7 @@ electronic_load_pico_OBJECTS = \
 electronic_load_pico_EXTERNAL_OBJECTS =
 
 electronic_load_pico.elf: CMakeFiles/electronic_load_pico.dir/i2c_lcd_lib.c.obj
-electronic_load_pico.elf: CMakeFiles/electronic_load_pico.dir/ads1115_lib.c.obj
+electronic_load_pico.elf: CMakeFiles/electronic_load_pico.dir/ads1015_lib.c.obj
 electronic_load_pico.elf: CMakeFiles/electronic_load_pico.dir/mcp4725_lib.c.obj
 electronic_load_pico.elf: CMakeFiles/electronic_load_pico.dir/main.c.obj
 electronic_load_pico.elf: CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj

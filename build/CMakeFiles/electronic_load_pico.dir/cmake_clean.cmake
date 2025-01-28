@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/electronic_load_pico.dir/ads1115_lib.c.obj"
-  "CMakeFiles/electronic_load_pico.dir/ads1115_lib.c.obj.d"
+  "CMakeFiles/electronic_load_pico.dir/ads1015_lib.c.obj"
+  "CMakeFiles/electronic_load_pico.dir/ads1015_lib.c.obj.d"
   "CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj"
   "CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj.d"
   "CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj"

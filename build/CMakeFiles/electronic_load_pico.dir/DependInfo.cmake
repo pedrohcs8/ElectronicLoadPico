@@ -125,7 +125,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/pedrohcs8/Documents/picoProjects/electronic_load_pico/ads1115_lib.c" "CMakeFiles/electronic_load_pico.dir/ads1115_lib.c.obj" "gcc" "CMakeFiles/electronic_load_pico.dir/ads1115_lib.c.obj.d"
+  "/home/pedrohcs8/Documents/picoProjects/electronic_load_pico/ads1015_lib.c" "CMakeFiles/electronic_load_pico.dir/ads1015_lib.c.obj" "gcc" "CMakeFiles/electronic_load_pico.dir/ads1015_lib.c.obj.d"
   "/home/pedrohcs8/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c" "CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj" "gcc" "CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj.d"
   "/home/pedrohcs8/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c" "CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj" "gcc" "CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj.d"
   "/home/pedrohcs8/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c" "CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj" "gcc" "CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj.d"

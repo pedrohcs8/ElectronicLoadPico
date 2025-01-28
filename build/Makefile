@@ -207,29 +207,29 @@ cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast:
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build.make pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build
 .PHONY : cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast
 
-ads1115_lib.obj: ads1115_lib.c.obj
-.PHONY : ads1115_lib.obj
+ads1015_lib.obj: ads1015_lib.c.obj
+.PHONY : ads1015_lib.obj
 
 # target to build an object file
-ads1115_lib.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/electronic_load_pico.dir/build.make CMakeFiles/electronic_load_pico.dir/ads1115_lib.c.obj
-.PHONY : ads1115_lib.c.obj
+ads1015_lib.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/electronic_load_pico.dir/build.make CMakeFiles/electronic_load_pico.dir/ads1015_lib.c.obj
+.PHONY : ads1015_lib.c.obj
 
-ads1115_lib.i: ads1115_lib.c.i
-.PHONY : ads1115_lib.i
+ads1015_lib.i: ads1015_lib.c.i
+.PHONY : ads1015_lib.i
 
 # target to preprocess a source file
-ads1115_lib.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/electronic_load_pico.dir/build.make CMakeFiles/electronic_load_pico.dir/ads1115_lib.c.i
-.PHONY : ads1115_lib.c.i
+ads1015_lib.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/electronic_load_pico.dir/build.make CMakeFiles/electronic_load_pico.dir/ads1015_lib.c.i
+.PHONY : ads1015_lib.c.i
 
-ads1115_lib.s: ads1115_lib.c.s
-.PHONY : ads1115_lib.s
+ads1015_lib.s: ads1015_lib.c.s
+.PHONY : ads1015_lib.s
 
 # target to generate assembly for a file
-ads1115_lib.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/electronic_load_pico.dir/build.make CMakeFiles/electronic_load_pico.dir/ads1115_lib.c.s
-.PHONY : ads1115_lib.c.s
+ads1015_lib.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/electronic_load_pico.dir/build.make CMakeFiles/electronic_load_pico.dir/ads1015_lib.c.s
+.PHONY : ads1015_lib.c.s
 
 home/pedrohcs8/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj: home/pedrohcs8/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
 .PHONY : home/pedrohcs8/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj
@@ -1846,9 +1846,9 @@ help:
 	@echo "... cyw43_driver_picow_cyw43_bus_pio_spi_pio_h"
 	@echo "... bs2_default"
 	@echo "... electronic_load_pico"
-	@echo "... ads1115_lib.obj"
-	@echo "... ads1115_lib.i"
-	@echo "... ads1115_lib.s"
+	@echo "... ads1015_lib.obj"
+	@echo "... ads1015_lib.i"
+	@echo "... ads1015_lib.s"
 	@echo "... home/pedrohcs8/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj"
 	@echo "... home/pedrohcs8/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i"
 	@echo "... home/pedrohcs8/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s"

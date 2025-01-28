@@ -7,7 +7,7 @@
 #include "hardware/clocks.h"
 
 #include "i2c_lcd_lib.h"
-#include "ads1115_lib.h"
+#include "ads1015_lib.h"
 #include "mcp4725_lib.h"
 
 bool ccw_fall = 0;  //bool used when falling edge is triggered
