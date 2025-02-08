@@ -179,7 +179,6 @@ void core1_main() {
 }
 
 int main() {
-
   gpio_set_irq_enabled_with_callback(9, GPIO_IRQ_EDGE_FALL, true, &readEncoder); // Set Interrupt on Falling Edge
   gpio_set_irq_enabled(10, GPIO_IRQ_EDGE_FALL, true);
   gpio_pull_up(12);
@@ -212,8 +211,8 @@ int main() {
       while(!conversionReady());
       amps_reading = readConversionReg() * 2.2;
     
-      setCompareMode(comparate2_GND, gain6v);
-    
+      setCompareMode(comparate2_GND, gain6v); 
+
       while(!conversionReady());
       volts_reading = readConversionReg();
     

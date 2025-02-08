@@ -2,6 +2,7 @@
 #include "pico/stdlib.h"
 #include "hardware/i2c.h"
 #include "hardware/gpio.h"
+#include "hardware/timer.h"
 
 #include "ads1015_lib.h"
 
@@ -59,9 +60,9 @@ int16_t readConversionReg() {
 double computeVolts(int raw, bool miliVolts, uint8_t pga_config) {
   if (pga_config == gain6v) {
     if (miliVolts) {
-      return (raw * 0.125);
+      return (raw * 0.200);
     } else {
-      return (raw * 0.125) / 100;
+      return (raw * 0.200) / 100;
     }
   } else if (pga_config == gain0256v) {
     if (miliVolts) {

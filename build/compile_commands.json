@@ -51,12 +51,12 @@
       "-v",
       "-c",
       "-o",
-      "CMakeFiles/cmTC_4b336.dir/CMakeCCompilerABI.c.o",
+      "CMakeFiles/cmTC_c91f6.dir/CMakeCCompilerABI.c.o",
       "/usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c"
     ],
     "directory": "/home/pedrohcs8/Documents/picoProjects/electronic_load_pico/build/elf2uf2/CMakeFiles/CMakeTmp",
     "file": "/usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c",
-    "output": "/home/pedrohcs8/Documents/picoProjects/electronic_load_pico/build/elf2uf2/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_4b336.dir/CMakeCCompilerABI.c.o"
+    "output": "/home/pedrohcs8/Documents/picoProjects/electronic_load_pico/build/elf2uf2/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_c91f6.dir/CMakeCCompilerABI.c.o"
   },
   {
     "arguments": [
@@ -64,12 +64,12 @@
       "-v",
       "-c",
       "-o",
-      "CMakeFiles/cmTC_52d8f.dir/CMakeCXXCompilerABI.cpp.o",
+      "CMakeFiles/cmTC_abc25.dir/CMakeCXXCompilerABI.cpp.o",
       "/usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp"
     ],
     "directory": "/home/pedrohcs8/Documents/picoProjects/electronic_load_pico/build/elf2uf2/CMakeFiles/CMakeTmp",
     "file": "/usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp",
-    "output": "/home/pedrohcs8/Documents/picoProjects/electronic_load_pico/build/elf2uf2/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_52d8f.dir/CMakeCXXCompilerABI.cpp.o"
+    "output": "/home/pedrohcs8/Documents/picoProjects/electronic_load_pico/build/elf2uf2/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_abc25.dir/CMakeCXXCompilerABI.cpp.o"
   },
   {
     "arguments": [
@@ -8748,12 +8748,12 @@
       "-v",
       "-c",
       "-o",
-      "CMakeFiles/cmTC_cf106.dir/CMakeCXXCompilerABI.cpp.o",
+      "CMakeFiles/cmTC_efcff.dir/CMakeCXXCompilerABI.cpp.o",
       "/usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp"
     ],
     "directory": "/home/pedrohcs8/Documents/picoProjects/electronic_load_pico/build/pioasm/CMakeFiles/CMakeTmp",
     "file": "/usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp",
-    "output": "/home/pedrohcs8/Documents/picoProjects/electronic_load_pico/build/pioasm/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_cf106.dir/CMakeCXXCompilerABI.cpp.o"
+    "output": "/home/pedrohcs8/Documents/picoProjects/electronic_load_pico/build/pioasm/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_efcff.dir/CMakeCXXCompilerABI.cpp.o"
   },
   {
     "arguments": [
