@@ -5,6 +5,7 @@
 #include "hardware/gpio.h"
 #include "hardware/rtc.h"
 #include "hardware/clocks.h"
+#include "hardware/adc.h"
 
 #include "i2c_lcd_lib.h"
 #include "ads1015_lib.h"
@@ -20,6 +21,7 @@ int amp_setting = 0;
 int dac_value = 0;
 
 float amps_reading = 0;
+float display_amps_reading = 0;
 int16_t volts_reading = 0;
 
 //Mutex
@@ -90,7 +92,14 @@ void refreshDisplayCallback() {
 
   writeHex(display_no_char);
 
-  float volts = computeVolts(volts_reading, false, gain6v);
+  float volts = adc_read() * (3.3f  / (1 << 12)) * 10;
+
+  if (volts > 6) {
+    long pwm_value = map(display_amps_reading, 0, 2000, 0, 255);
+    pwm_set_chan_level(0, PWM_CHAN_A, pwm_value);
+  } else {
+    pwm_set_chan_level(0, PWM_CHAN_A, 0);
+  }
 
   char display_volts[4];
   snprintf(display_volts, 4, "%f", volts + 0.4);
@@ -109,7 +118,7 @@ void refreshDisplayCallback() {
   writeText("V", 1);
 
   moveCursorLine(2);
-  display4Int(amps_reading);
+  display4Int(display_amps_reading);
   writeText("AMPS", 4);
 }
 
@@ -122,7 +131,7 @@ void bttTesterRefresh() {
   writeText("AMPS", 4);
 
   writeHex(display_no_char);
-  
+
   datetime_t elapsedTime;
   rtc_get_datetime(&elapsedTime);
 
@@ -133,14 +142,14 @@ void bttTesterRefresh() {
 
   moveCursorLine(2);
 
-  int mah = amps_reading * minutes / 60;
+  int mah = display_amps_reading * minutes / 60;
 
   display4Int(mah);
   writeText("MAH", 3);
 
   writeHex(display_no_char);
 
-  float volts = computeVolts(volts_reading, false, gain6v);
+  float volts = adc_read() * (3.3f  / (1 << 12)) * 10;
 
   char display_volts[4];
   snprintf(display_volts, 4, "%f", volts / 0.81);
@@ -163,16 +172,15 @@ void core1_main() {
   while(true) {
     recursive_mutex_enter_blocking(&writeDisplayMutex);
 
+    display_amps_reading = amps_reading;
+
+    recursive_mutex_exit(&writeDisplayMutex); 
+
     if (bttMenuMode) {
       bttTesterRefresh();
     } else {
       refreshDisplayCallback();
     }
-
-    long pwm_value = map(amps_reading, 0, 2000, 0, 255);
-    pwm_set_chan_level(0, PWM_CHAN_A, pwm_value);
-
-    recursive_mutex_exit(&writeDisplayMutex);
 
     sleep_ms(350);
   }
@@ -203,29 +211,33 @@ int main() {
 
   multicore_launch_core1(core1_main);
 
+  adc_init();
+  adc_gpio_init(28);
+  adc_select_input(2);
+
+  dac_value = 600;
+
   while (true) {
-    int current;
+    float current;
 
+    // send information to display core
     if (recursive_mutex_try_enter(&writeDisplayMutex, &owner_out)) {
-      setCompareMode(comparate0_1, gain0256v);
+      setCompareMode(comparate0_1, gain05v);
       while(!conversionReady());
-      amps_reading = readConversionReg() * 2.2;
-    
-      setCompareMode(comparate2_GND, gain6v); 
 
-      while(!conversionReady());
-      volts_reading = readConversionReg();
-    
+      amps_reading = computeVolts(readConversionReg()) / 0.0035;
+
       current = amps_reading;
       mutexCurrent = true;
-    
+
       recursive_mutex_exit(&writeDisplayMutex);
     }
 
     if (!mutexCurrent) {
-      setCompareMode(comparate0_1, gain0256v);
+      setCompareMode(comparate0_1, gain05v);
       while(!conversionReady());
-      current = readConversionReg() * 2.2;
+
+      current = computeVolts(readConversionReg()) / 0.0035;
     }
 
     int mA_setpoint = amp_setting * 1000;
@@ -249,7 +261,7 @@ int main() {
     /* writeDec(mosfet_voltage + 1520); */
 
     //3100
-    writeDec(dac_value + 800); //600
+    writeDec(dac_value); //600
     mutexCurrent = false;
   };
 }

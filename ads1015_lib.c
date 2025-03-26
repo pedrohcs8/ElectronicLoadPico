@@ -57,20 +57,9 @@ int16_t readConversionReg() {
   return result;
 }
 
-double computeVolts(int raw, bool miliVolts, uint8_t pga_config) {
-  if (pga_config == gain6v) {
-    if (miliVolts) {
-      return (raw * 0.200);
-    } else {
-      return (raw * 0.200) / 100;
-    }
-  } else if (pga_config == gain0256v) {
-    if (miliVolts) {
-      return (raw * 0.125);
-    } else {
-      return (raw * 0.125) / 1000;
-    }
-  }
+float computeVolts(int16_t raw) {
+  float result = (raw * 1.0 / 32768) * 512;
+  return result;
 }
 
 void setCompareMode(uint8_t mux_config, uint8_t pga_config) {

@@ -31,6 +31,7 @@ target_link_libraries(${PROJECT_NAME}
     hardware_pwm
     hardware_i2c
     hardware_rtc
+    hardware_adc
 )
 
 add_compile_definitions(PICO_STDIO_USB_CONNECT_WAIT_TIMEOUT_MS=5000)

@@ -121,6 +121,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_pwm/include"
   "/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_i2c/include"
   "/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_rtc/include"
+  "/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_adc/include"
   )
 
 # The set of dependency files which are needed:
@@ -153,6 +154,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/pedrohcs8/pico/pico-sdk/src/common/pico_util/datetime.c" "CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/common/pico_util/datetime.c.obj" "gcc" "CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/common/pico_util/datetime.c.obj.d"
   "/home/pedrohcs8/pico/pico-sdk/src/common/pico_util/pheap.c" "CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/common/pico_util/pheap.c.obj" "gcc" "CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/common/pico_util/pheap.c.obj.d"
   "/home/pedrohcs8/pico/pico-sdk/src/common/pico_util/queue.c" "CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/common/pico_util/queue.c.obj" "gcc" "CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/common/pico_util/queue.c.obj.d"
+  "/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c" "CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj" "gcc" "CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj.d"
   "/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c" "CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj" "gcc" "CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj.d"
   "/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c" "CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj" "gcc" "CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj.d"
   "/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c" "CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj" "gcc" "CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj.d"

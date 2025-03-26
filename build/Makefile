@@ -879,6 +879,30 @@ home/pedrohcs8/pico/pico-sdk/src/common/pico_util/queue.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/electronic_load_pico.dir/build.make CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/common/pico_util/queue.c.s
 .PHONY : home/pedrohcs8/pico/pico-sdk/src/common/pico_util/queue.c.s
 
+home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_adc/adc.obj: home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
+.PHONY : home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_adc/adc.obj
+
+# target to build an object file
+home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/electronic_load_pico.dir/build.make CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
+.PHONY : home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
+
+home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_adc/adc.i: home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
+.PHONY : home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_adc/adc.i
+
+# target to preprocess a source file
+home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/electronic_load_pico.dir/build.make CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
+.PHONY : home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
+
+home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_adc/adc.s: home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
+.PHONY : home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_adc/adc.s
+
+# target to generate assembly for a file
+home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/electronic_load_pico.dir/build.make CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
+.PHONY : home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
+
 home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_claim/claim.obj: home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 .PHONY : home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_claim/claim.obj
 
@@ -1930,6 +1954,9 @@ help:
 	@echo "... home/pedrohcs8/pico/pico-sdk/src/common/pico_util/queue.obj"
 	@echo "... home/pedrohcs8/pico/pico-sdk/src/common/pico_util/queue.i"
 	@echo "... home/pedrohcs8/pico/pico-sdk/src/common/pico_util/queue.s"
+	@echo "... home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_adc/adc.obj"
+	@echo "... home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_adc/adc.i"
+	@echo "... home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_adc/adc.s"
 	@echo "... home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_claim/claim.obj"
 	@echo "... home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_claim/claim.i"
 	@echo "... home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_claim/claim.s"

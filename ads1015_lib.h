@@ -26,5 +26,5 @@ void initADS(int addr, int sdaPin, int sdlPin);
 void writeConfigReg(uint8_t config[3]);
 int16_t readConversionReg();
 void setCompareMode(uint8_t mux_config, uint8_t pga_config);
-double computeVolts(int raw, bool miliVolts, uint8_t pga_config);
+float computeVolts(int16_t raw);
 bool conversionReady();

@@ -1108,6 +1108,20 @@ CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_rtc/rtc.c.s"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_rtc/rtc.c -o CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_rtc/rtc.c.s
 
+CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj: CMakeFiles/electronic_load_pico.dir/flags.make
+CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj: /home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c
+CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj: CMakeFiles/electronic_load_pico.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedrohcs8/Documents/picoProjects/electronic_load_pico/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj -MF CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj.d -o CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj -c /home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c
+
+CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c > CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
+
+CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c -o CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
+
 # Object files for target electronic_load_pico
 electronic_load_pico_OBJECTS = \
 "CMakeFiles/electronic_load_pico.dir/i2c_lcd_lib.c.obj" \
@@ -1184,7 +1198,8 @@ electronic_load_pico_OBJECTS = \
 "CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj" \
 "CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj" \
 "CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj" \
-"CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_rtc/rtc.c.obj"
+"CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_rtc/rtc.c.obj" \
+"CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj"
 
 # External object files for target electronic_load_pico
 electronic_load_pico_EXTERNAL_OBJECTS =
@@ -1264,10 +1279,11 @@ electronic_load_pico.elf: CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pic
 electronic_load_pico.elf: CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
 electronic_load_pico.elf: CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
 electronic_load_pico.elf: CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_rtc/rtc.c.obj
+electronic_load_pico.elf: CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
 electronic_load_pico.elf: CMakeFiles/electronic_load_pico.dir/build.make
 electronic_load_pico.elf: pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S
 electronic_load_pico.elf: CMakeFiles/electronic_load_pico.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pedrohcs8/Documents/picoProjects/electronic_load_pico/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Linking CXX executable electronic_load_pico.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pedrohcs8/Documents/picoProjects/electronic_load_pico/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Linking CXX executable electronic_load_pico.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/electronic_load_pico.dir/link.txt --verbose=$(VERBOSE)
 	/usr/bin/arm-none-eabi-objcopy -Oihex /home/pedrohcs8/Documents/picoProjects/electronic_load_pico/build/electronic_load_pico.elf electronic_load_pico.hex
 	/usr/bin/arm-none-eabi-objcopy -Obinary /home/pedrohcs8/Documents/picoProjects/electronic_load_pico/build/electronic_load_pico.elf electronic_load_pico.bin
