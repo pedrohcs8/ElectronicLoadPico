@@ -58,7 +58,7 @@ int16_t readConversionReg() {
 }
 
 float computeVolts(int16_t raw) {
-  float result = (raw * 1.0 / 32768) * 512;
+  float result = (float)raw * 256 / 32768.0;
   return result;
 }
 

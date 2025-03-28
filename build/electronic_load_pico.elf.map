@@ -85,8 +85,7 @@ Discarded input sections
                 0x0000000000000000        0x4 CMakeFiles/electronic_load_pico.dir/ads1015_lib.c.obj
  .data.comparate3_GND
                 0x0000000000000000        0x4 CMakeFiles/electronic_load_pico.dir/ads1015_lib.c.obj
- .data.gain0256v
-                0x0000000000000000        0x4 CMakeFiles/electronic_load_pico.dir/ads1015_lib.c.obj
+ .data.gain05v  0x0000000000000000        0x4 CMakeFiles/electronic_load_pico.dir/ads1015_lib.c.obj
  .data.gain1v   0x0000000000000000        0x4 CMakeFiles/electronic_load_pico.dir/ads1015_lib.c.obj
  .data.gain2v   0x0000000000000000        0x4 CMakeFiles/electronic_load_pico.dir/ads1015_lib.c.obj
  .data.gain4v   0x0000000000000000        0x4 CMakeFiles/electronic_load_pico.dir/ads1015_lib.c.obj
@@ -1548,9 +1547,9 @@ Discarded input sections
  .text          0x0000000000000000        0x0 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
  .data          0x0000000000000000        0x0 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
- .text          0x0000000000000000        0x0 /tmp/ccAZs9Gr.o
- .data          0x0000000000000000        0x0 /tmp/ccAZs9Gr.o
- .bss           0x0000000000000000        0x0 /tmp/ccAZs9Gr.o
+ .text          0x0000000000000000        0x0 /tmp/cc4zcGJc.o
+ .data          0x0000000000000000        0x0 /tmp/cc4zcGJc.o
+ .bss           0x0000000000000000        0x0 /tmp/cc4zcGJc.o
  .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .text          0x0000000000000000       0x10 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-atexit.o)
@@ -1814,11 +1813,11 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
 .boot2          0x0000000010000000      0x100
                 0x0000000010000000                __boot2_start__ = .
  *(.boot2)
- .boot2         0x0000000010000000      0x100 /tmp/ccAZs9Gr.o
+ .boot2         0x0000000010000000      0x100 /tmp/cc4zcGJc.o
                 0x0000000010000100                __boot2_end__ = .
                 0x0000000000000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
-.text           0x0000000010000100     0x60b8
+.text           0x0000000010000100     0x60b0
                 0x0000000010000100                __logical_binary_start = .
  *(.vectors)
  .vectors       0x0000000010000100       0xd4 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
@@ -1908,442 +1907,441 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
                 0x0000000010000fc8       0x38 CMakeFiles/electronic_load_pico.dir/ads1015_lib.c.obj
                 0x0000000010000fc8                readConversionReg
  .text.computeVolts
-                0x0000000010001000       0x20 CMakeFiles/electronic_load_pico.dir/ads1015_lib.c.obj
+                0x0000000010001000       0x18 CMakeFiles/electronic_load_pico.dir/ads1015_lib.c.obj
                 0x0000000010001000                computeVolts
  .text.setCompareMode
-                0x0000000010001020       0x40 CMakeFiles/electronic_load_pico.dir/ads1015_lib.c.obj
-                0x0000000010001020                setCompareMode
+                0x0000000010001018       0x40 CMakeFiles/electronic_load_pico.dir/ads1015_lib.c.obj
+                0x0000000010001018                setCompareMode
  .text.conversionReady
-                0x0000000010001060       0x38 CMakeFiles/electronic_load_pico.dir/ads1015_lib.c.obj
-                0x0000000010001060                conversionReady
- .text.initMCP  0x0000000010001098       0x74 CMakeFiles/electronic_load_pico.dir/mcp4725_lib.c.obj
-                0x0000000010001098                initMCP
+                0x0000000010001058       0x38 CMakeFiles/electronic_load_pico.dir/ads1015_lib.c.obj
+                0x0000000010001058                conversionReady
+ .text.initMCP  0x0000000010001090       0x74 CMakeFiles/electronic_load_pico.dir/mcp4725_lib.c.obj
+                0x0000000010001090                initMCP
  .text.writeDec
-                0x000000001000110c       0x40 CMakeFiles/electronic_load_pico.dir/mcp4725_lib.c.obj
-                0x000000001000110c                writeDec
+                0x0000000010001104       0x40 CMakeFiles/electronic_load_pico.dir/mcp4725_lib.c.obj
+                0x0000000010001104                writeDec
  .text.readEncoder
-                0x000000001000114c       0xc4 CMakeFiles/electronic_load_pico.dir/main.c.obj
-                0x000000001000114c                readEncoder
+                0x0000000010001144       0xc4 CMakeFiles/electronic_load_pico.dir/main.c.obj
+                0x0000000010001144                readEncoder
  .text.refreshDisplayCallback
-                0x0000000010001210      0x16c CMakeFiles/electronic_load_pico.dir/main.c.obj
-                0x0000000010001210                refreshDisplayCallback
+                0x0000000010001208      0x16c CMakeFiles/electronic_load_pico.dir/main.c.obj
+                0x0000000010001208                refreshDisplayCallback
  .text.bttTesterRefresh
-                0x000000001000137c      0x160 CMakeFiles/electronic_load_pico.dir/main.c.obj
-                0x000000001000137c                bttTesterRefresh
+                0x0000000010001374      0x160 CMakeFiles/electronic_load_pico.dir/main.c.obj
+                0x0000000010001374                bttTesterRefresh
  .text.core1_main
-                0x00000000100014dc       0x44 CMakeFiles/electronic_load_pico.dir/main.c.obj
-                0x00000000100014dc                core1_main
+                0x00000000100014d4       0x44 CMakeFiles/electronic_load_pico.dir/main.c.obj
+                0x00000000100014d4                core1_main
  .text.startup.main
-                0x0000000010001520      0x220 CMakeFiles/electronic_load_pico.dir/main.c.obj
-                0x0000000010001520                main
+                0x0000000010001518      0x224 CMakeFiles/electronic_load_pico.dir/main.c.obj
+                0x0000000010001518                main
  .text.gpio_default_irq_handler
-                0x0000000010001740      0x248 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x000000001000173c      0x248 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
  .text.gpio_set_function
-                0x0000000010001988       0x30 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x0000000010001988                gpio_set_function
+                0x0000000010001984       0x30 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x0000000010001984                gpio_set_function
  .text.gpio_set_pulls
-                0x00000000100019b8       0x30 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x00000000100019b8                gpio_set_pulls
+                0x00000000100019b4       0x30 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x00000000100019b4                gpio_set_pulls
  .text.gpio_set_irq_enabled
-                0x00000000100019e8       0x54 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x00000000100019e8                gpio_set_irq_enabled
+                0x00000000100019e4       0x54 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x00000000100019e4                gpio_set_irq_enabled
  .text.gpio_set_irq_enabled_with_callback
-                0x0000000010001a3c       0xb0 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x0000000010001a3c                gpio_set_irq_enabled_with_callback
+                0x0000000010001a38       0xb0 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x0000000010001a38                gpio_set_irq_enabled_with_callback
  .text.gpio_set_input_enabled
-                0x0000000010001aec       0x28 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x0000000010001aec                gpio_set_input_enabled
+                0x0000000010001ae8       0x28 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x0000000010001ae8                gpio_set_input_enabled
  .text.running_on_fpga
-                0x0000000010001b14       0x10 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
-                0x0000000010001b14                running_on_fpga
+                0x0000000010001b10       0x10 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+                0x0000000010001b10                running_on_fpga
  .text.hw_claim_or_assert
-                0x0000000010001b24       0x44 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x0000000010001b24                hw_claim_or_assert
+                0x0000000010001b20       0x44 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x0000000010001b20                hw_claim_or_assert
  .text.spin_locks_reset
-                0x0000000010001b68       0x1c CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x0000000010001b68                spin_locks_reset
+                0x0000000010001b64       0x1c CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x0000000010001b64                spin_locks_reset
  .text.next_striped_spin_lock_num
-                0x0000000010001b84       0x18 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x0000000010001b84                next_striped_spin_lock_num
+                0x0000000010001b80       0x18 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x0000000010001b80                next_striped_spin_lock_num
  .text.irq_set_enabled
-                0x0000000010001b9c       0x24 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010001b9c                irq_set_enabled
+                0x0000000010001b98       0x24 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010001b98                irq_set_enabled
  .text.irq_is_enabled
-                0x0000000010001bc0       0x18 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010001bc0                irq_is_enabled
+                0x0000000010001bbc       0x18 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010001bbc                irq_is_enabled
  .text.irq_get_vtable_handler
-                0x0000000010001bd8       0x10 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010001bd8                irq_get_vtable_handler
+                0x0000000010001bd4       0x10 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010001bd4                irq_get_vtable_handler
  .text.irq_set_exclusive_handler
-                0x0000000010001be8       0x54 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010001be8                irq_set_exclusive_handler
+                0x0000000010001be4       0x54 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010001be4                irq_set_exclusive_handler
  .text.irq_add_shared_handler
-                0x0000000010001c3c      0x1e8 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010001c3c                irq_add_shared_handler
+                0x0000000010001c38      0x1e8 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010001c38                irq_add_shared_handler
  .text.irq_remove_handler
-                0x0000000010001e24      0x1b0 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010001e24                irq_remove_handler
+                0x0000000010001e20      0x1b0 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010001e20                irq_remove_handler
  .text.irq_add_tail_to_free_list
-                0x0000000010001fd4       0xb4 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010001fd4                irq_add_tail_to_free_list
+                0x0000000010001fd0       0xb4 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010001fd0                irq_add_tail_to_free_list
  .text.irq_init_priorities
-                0x0000000010002088       0x24 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010002088                irq_init_priorities
+                0x0000000010002084       0x24 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010002084                irq_init_priorities
  .text.lock_init
-                0x00000000100020ac       0x10 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
-                0x00000000100020ac                lock_init
+                0x00000000100020a8       0x10 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+                0x00000000100020a8                lock_init
  .text.mutex_init
-                0x00000000100020bc       0x1c CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x00000000100020bc                mutex_init
+                0x00000000100020b8       0x1c CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x00000000100020b8                mutex_init
  .text.recursive_mutex_init
-                0x00000000100020d8       0x1c CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x00000000100020d8                recursive_mutex_init
+                0x00000000100020d4       0x1c CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x00000000100020d4                recursive_mutex_init
  .text.timer_pool_entry_comparator
-                0x00000000100020f4       0x34 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x00000000100020f4                timer_pool_entry_comparator
+                0x00000000100020f0       0x34 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x00000000100020f0                timer_pool_entry_comparator
  .text.sleep_until_callback
-                0x0000000010002128       0x30 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010002124       0x30 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.add_alarm_under_lock.isra.0
-                0x0000000010002158      0x100 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010002154      0x100 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_alarm_callback
-                0x0000000010002258      0x1bc CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010002254      0x1bc CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_init_default
-                0x0000000010002414       0x6c CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010002414                alarm_pool_init_default
+                0x0000000010002410       0x6c CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010002410                alarm_pool_init_default
  .text.alarm_pool_add_alarm_at
-                0x0000000010002480      0x178 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010002480                alarm_pool_add_alarm_at
+                0x000000001000247c      0x178 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x000000001000247c                alarm_pool_add_alarm_at
  .text.sleep_until
-                0x00000000100025f8       0xc4 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x00000000100025f8                sleep_until
+                0x00000000100025f4       0xc4 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x00000000100025f4                sleep_until
  .text.sleep_ms
-                0x00000000100026bc       0x34 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x00000000100026bc                sleep_ms
+                0x00000000100026b8       0x34 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x00000000100026b8                sleep_ms
  .text.best_effort_wfe_or_timeout
-                0x00000000100026f0       0xd4 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x00000000100026f0                best_effort_wfe_or_timeout
+                0x00000000100026ec       0xd4 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x00000000100026ec                best_effort_wfe_or_timeout
  .text.hardware_alarm_irq_handler
-                0x00000000100027c4       0xbc CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x00000000100027c0       0xbc CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .text.hardware_alarm_claim
-                0x0000000010002880       0x18 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010002880                hardware_alarm_claim
+                0x000000001000287c       0x18 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x000000001000287c                hardware_alarm_claim
  .text.time_us_64
-                0x0000000010002898       0x14 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010002898                time_us_64
+                0x0000000010002894       0x14 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010002894                time_us_64
  .text.busy_wait_until
-                0x00000000100028ac       0x20 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x00000000100028ac                busy_wait_until
+                0x00000000100028a8       0x20 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x00000000100028a8                busy_wait_until
  .text.hardware_alarm_set_callback
-                0x00000000100028cc       0x8c CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x00000000100028cc                hardware_alarm_set_callback
+                0x00000000100028c8       0x8c CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x00000000100028c8                hardware_alarm_set_callback
  .text.hardware_alarm_set_target
-                0x0000000010002958       0xd4 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010002958                hardware_alarm_set_target
+                0x0000000010002954       0xd4 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010002954                hardware_alarm_set_target
  .text.hardware_alarm_cancel
-                0x0000000010002a2c       0x3c CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010002a2c                hardware_alarm_cancel
+                0x0000000010002a28       0x3c CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010002a28                hardware_alarm_cancel
  .text.ph_merge_nodes
-                0x0000000010002a68       0x68 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010002a64       0x68 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_post_alloc_init
-                0x0000000010002ad0       0x3c CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x0000000010002ad0                ph_post_alloc_init
+                0x0000000010002acc       0x3c CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010002acc                ph_post_alloc_init
  .text.ph_merge_two_pass
-                0x0000000010002b0c       0x90 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x0000000010002b0c                ph_merge_two_pass
+                0x0000000010002b08       0x90 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010002b08                ph_merge_two_pass
  .text.ph_remove_any_head
-                0x0000000010002b9c      0x100 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010002b98      0x100 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_remove_head
-                0x0000000010002c9c      0x104 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x0000000010002c9c                ph_remove_head
+                0x0000000010002c98      0x104 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010002c98                ph_remove_head
  .text.ph_remove_and_free_node
-                0x0000000010002da0       0x7c CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x0000000010002da0                ph_remove_and_free_node
+                0x0000000010002d9c       0x7c CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010002d9c                ph_remove_and_free_node
  .text.clocks_init
-                0x0000000010002e1c      0x2d0 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x0000000010002e1c                clocks_init
+                0x0000000010002e18      0x2d0 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x0000000010002e18                clocks_init
  .text.clock_get_hz
-                0x00000000100030ec        0xc CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x00000000100030ec                clock_get_hz
+                0x00000000100030e8        0xc CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x00000000100030e8                clock_get_hz
  .text.pll_init
-                0x00000000100030f8       0xa0 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
-                0x00000000100030f8                pll_init
+                0x00000000100030f4       0xa0 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+                0x00000000100030f4                pll_init
  .text.watchdog_start_tick
-                0x0000000010003198       0x10 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
-                0x0000000010003198                watchdog_start_tick
+                0x0000000010003194       0x10 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+                0x0000000010003194                watchdog_start_tick
  .text.xosc_init
-                0x00000000100031a8       0x28 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
-                0x00000000100031a8                xosc_init
+                0x00000000100031a4       0x28 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+                0x00000000100031a4                xosc_init
  .text.runtime_init
-                0x00000000100031d0       0xf0 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x00000000100031d0                runtime_init
- .text._exit    0x00000000100032c0        0x4 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x00000000100032c0                _exit
- .text.exit     0x00000000100032c4        0x8 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x00000000100032c4                exit
- .text.panic    0x00000000100032cc       0x30 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x00000000100032cc                panic
+                0x00000000100031cc       0xf0 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x00000000100031cc                runtime_init
+ .text._exit    0x00000000100032bc        0x4 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x00000000100032bc                _exit
+ .text.exit     0x00000000100032c0        0x8 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x00000000100032c0                exit
+ .text.panic    0x00000000100032c8       0x30 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x00000000100032c8                panic
  .text.hard_assertion_failure
-                0x00000000100032fc        0xc CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x00000000100032fc                hard_assertion_failure
+                0x00000000100032f8        0xc CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x00000000100032f8                hard_assertion_failure
  .text._out_buffer
-                0x0000000010003308        0x8 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010003304        0x8 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_null
-                0x0000000010003310        0x4 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x000000001000330c        0x4 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_rev
-                0x0000000010003314       0x9c CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010003310       0x9c CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._ntoa_format
-                0x00000000100033b0      0x1cc CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x00000000100033ac      0x1cc CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_char
-                0x000000001000357c       0x10 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._etoa    0x000000001000358c      0x44c CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._ftoa    0x00000000100039d8      0x398 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010003578       0x10 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._etoa    0x0000000010003588      0x44c CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._ftoa    0x00000000100039d4      0x398 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._vsnprintf
-                0x0000000010003d70      0xb04 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010003d6c      0xb04 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text.__wrap_sprintf
-                0x0000000010004874       0x28 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-                0x0000000010004874                __wrap_sprintf
+                0x0000000010004870       0x28 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010004870                __wrap_sprintf
  .text.__wrap_snprintf
-                0x000000001000489c       0x28 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-                0x000000001000489c                __wrap_snprintf
+                0x0000000010004898       0x28 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010004898                __wrap_snprintf
  .text.weak_raw_vprintf
-                0x00000000100048c4       0x30 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-                0x00000000100048c4                weak_raw_vprintf
- .text          0x00000000100048f4       0x10 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+                0x00000000100048c0       0x30 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x00000000100048c0                weak_raw_vprintf
+ .text          0x00000000100048f0       0x10 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
  .text.rom_func_lookup
-                0x0000000010004904       0x10 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x0000000010004904                rom_func_lookup
+                0x0000000010004900       0x10 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x0000000010004900                rom_func_lookup
  .text.rom_data_lookup
-                0x0000000010004914       0x10 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x0000000010004914                rom_data_lookup
+                0x0000000010004910       0x10 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x0000000010004910                rom_data_lookup
  .text.rom_funcs_lookup
-                0x0000000010004924       0x44 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x0000000010004924                rom_funcs_lookup
+                0x0000000010004920       0x44 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x0000000010004920                rom_funcs_lookup
  .text.__wrap___aeabi_idiv
-                0x0000000010004968       0x50 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x0000000010004968                __wrap___aeabi_idivmod
-                0x0000000010004968                divmod_s32s32
-                0x0000000010004968                div_s32s32
-                0x0000000010004968                __wrap___aeabi_idiv
-                0x0000000010004970                divmod_s32s32_unsafe
-                0x000000001000499c                divmod_s32s32_savestate
+                0x0000000010004964       0x50 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x0000000010004964                __wrap___aeabi_idivmod
+                0x0000000010004964                divmod_s32s32
+                0x0000000010004964                div_s32s32
+                0x0000000010004964                __wrap___aeabi_idiv
+                0x000000001000496c                divmod_s32s32_unsafe
+                0x0000000010004998                divmod_s32s32_savestate
  .text.__wrap___aeabi_uidiv
-                0x00000000100049b8       0x4c CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x00000000100049b8                __wrap___aeabi_uidiv
-                0x00000000100049b8                __wrap___aeabi_uidivmod
-                0x00000000100049b8                div_u32u32
-                0x00000000100049b8                divmod_u32u32
-                0x00000000100049c0                divmod_u32u32_unsafe
-                0x00000000100049e8                divmod_u32u32_savestate
+                0x00000000100049b4       0x4c CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x00000000100049b4                __wrap___aeabi_uidiv
+                0x00000000100049b4                __wrap___aeabi_uidivmod
+                0x00000000100049b4                div_u32u32
+                0x00000000100049b4                divmod_u32u32
+                0x00000000100049bc                divmod_u32u32_unsafe
+                0x00000000100049e4                divmod_u32u32_savestate
  .text.__wrap___aeabi_ldiv
-                0x0000000010004a04      0x424 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x0000000010004a04                div_s64s64
-                0x0000000010004a04                divmod_s64s64
-                0x0000000010004a04                __wrap___aeabi_ldivmod
-                0x0000000010004a34                div_u64u64
-                0x0000000010004a34                divmod_u64u64
-                0x0000000010004a34                __wrap___aeabi_uldivmod
-                0x0000000010004a44                divmod_u64u64_savestate
-                0x0000000010004a64                divmod_s64s64_unsafe
-                0x0000000010004aec                divmod_u64u64_unsafe
+                0x0000000010004a00      0x424 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x0000000010004a00                div_s64s64
+                0x0000000010004a00                divmod_s64s64
+                0x0000000010004a00                __wrap___aeabi_ldivmod
+                0x0000000010004a30                div_u64u64
+                0x0000000010004a30                divmod_u64u64
+                0x0000000010004a30                __wrap___aeabi_uldivmod
+                0x0000000010004a40                divmod_u64u64_savestate
+                0x0000000010004a60                divmod_s64s64_unsafe
+                0x0000000010004ae8                divmod_u64u64_unsafe
  .text.__wrap___aeabi_darithmetic
-                0x0000000010004e28       0x80 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010004e28                __wrap___aeabi_drsub
-                0x0000000010004e2e                __wrap___aeabi_dsub
-                0x0000000010004e40                __wrap___aeabi_dadd
-                0x0000000010004e52                __wrap___aeabi_ddiv
-                0x0000000010004e8e                __wrap___aeabi_dmul
+                0x0000000010004e24       0x80 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010004e24                __wrap___aeabi_drsub
+                0x0000000010004e2a                __wrap___aeabi_dsub
+                0x0000000010004e3c                __wrap___aeabi_dadd
+                0x0000000010004e4e                __wrap___aeabi_ddiv
+                0x0000000010004e8a                __wrap___aeabi_dmul
  .text.__wrap___aeabi_cdcmple
-                0x0000000010004ea8       0x6c CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010004ea8                __wrap___aeabi_cdrcmple
-                0x0000000010004eb8                __wrap___aeabi_cdcmple
-                0x0000000010004eb8                __wrap___aeabi_cdcmpeq
+                0x0000000010004ea4       0x6c CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010004ea4                __wrap___aeabi_cdrcmple
+                0x0000000010004eb4                __wrap___aeabi_cdcmple
+                0x0000000010004eb4                __wrap___aeabi_cdcmpeq
  .text.__wrap___aeabi_dcmplt
-                0x0000000010004f14        0xc CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010004f14                __wrap___aeabi_dcmplt
+                0x0000000010004f10        0xc CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010004f10                __wrap___aeabi_dcmplt
  .text.__wrap___aeabi_dcmple
-                0x0000000010004f20       0x10 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010004f20                __wrap___aeabi_dcmple
+                0x0000000010004f1c       0x10 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010004f1c                __wrap___aeabi_dcmple
  .text.__wrap___aeabi_dcmpge
-                0x0000000010004f30       0x10 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010004f30                __wrap___aeabi_dcmpge
+                0x0000000010004f2c       0x10 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010004f2c                __wrap___aeabi_dcmpge
  .text.__wrap___aeabi_dcmpgt
-                0x0000000010004f40        0xa CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010004f40                __wrap___aeabi_dcmpgt
+                0x0000000010004f3c        0xa CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010004f3c                __wrap___aeabi_dcmpgt
  .text.__wrap___aeabi_dcmpun
-                0x0000000010004f4a       0x1c CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010004f4a                __wrap___aeabi_dcmpun
- *fill*         0x0000000010004f66        0x2 
+                0x0000000010004f46       0x1c CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010004f46                __wrap___aeabi_dcmpun
+ *fill*         0x0000000010004f62        0x2 
  .text.__wrap___aeabi_i2d
-                0x0000000010004f68       0x38 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010004f68                __wrap___aeabi_ui2d
-                0x0000000010004f70                __wrap___aeabi_i2d
+                0x0000000010004f64       0x38 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010004f64                __wrap___aeabi_ui2d
+                0x0000000010004f6c                __wrap___aeabi_i2d
  .text.__wrap___aeabi_d2iz
-                0x0000000010004fa0       0x48 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010004fa0                __wrap___aeabi_d2iz
-                0x0000000010004fa0                double2int_z
+                0x0000000010004f9c       0x48 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010004f9c                __wrap___aeabi_d2iz
+                0x0000000010004f9c                double2int_z
  .text.__wrap___aeabi_d2uiz
-                0x0000000010004fe8       0x18 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010004fe8                double2uint
-                0x0000000010004fe8                __wrap___aeabi_d2uiz
+                0x0000000010004fe4       0x18 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010004fe4                double2uint
+                0x0000000010004fe4                __wrap___aeabi_d2uiz
  .text.__wrap___aeabi_d2f
-                0x0000000010005000       0x18 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010005000                __wrap___aeabi_d2f
+                0x0000000010004ffc       0x18 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010004ffc                __wrap___aeabi_d2f
  .text.__aeabi_double_init
-                0x0000000010005018       0x94 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-                0x0000000010005018                __aeabi_double_init
+                0x0000000010005014       0x94 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x0000000010005014                __aeabi_double_init
  .text.double_table_shim_on_use_helper
-                0x00000000100050ac       0x2c CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x00000000100050ac                double_table_shim_on_use_helper
+                0x00000000100050a8       0x2c CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x00000000100050a8                double_table_shim_on_use_helper
  .text.__wrap___aeabi_dsub
-                0x00000000100050d8       0x10 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x00000000100050d8                drsub_shim
-                0x00000000100050de                dsub_shim
+                0x00000000100050d4       0x10 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x00000000100050d4                drsub_shim
+                0x00000000100050da                dsub_shim
  .text.dadd_shim
-                0x00000000100050e8      0x15c CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x00000000100050e8                dadd_shim
+                0x00000000100050e4      0x15c CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x00000000100050e4                dadd_shim
  .text.dmul_shim
-                0x0000000010005244      0x15c CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010005244                dmul_shim
+                0x0000000010005240      0x15c CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010005240                dmul_shim
  .text.ddiv_shim
-                0x00000000100053a0      0x1b0 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x00000000100053a0                ddiv_shim
+                0x000000001000539c      0x1b0 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x000000001000539c                ddiv_shim
  .text.double2uint_shim
-                0x0000000010005550        0xe CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010005550                double2uint_shim
-                0x0000000010005552                double2ufix_shim
- *fill*         0x000000001000555e        0x2 
+                0x000000001000554c        0xe CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x000000001000554c                double2uint_shim
+                0x000000001000554e                double2ufix_shim
+ *fill*         0x000000001000555a        0x2 
  .text.double2uint64_shim
-                0x0000000010005560       0x70 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010005560                double2uint64_shim
-                0x0000000010005562                double2ufix64_shim
-                0x0000000010005582                d2fix_a
+                0x000000001000555c       0x70 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x000000001000555c                double2uint64_shim
+                0x000000001000555e                double2ufix64_shim
+                0x000000001000557e                d2fix_a
  .text.double2float_shim
-                0x00000000100055d0       0x5c CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x00000000100055d0                double2float_shim
+                0x00000000100055cc       0x5c CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x00000000100055cc                double2float_shim
  .text.dunpacks
-                0x000000001000562c       0x3c CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x000000001000562c                dunpacks
+                0x0000000010005628       0x3c CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010005628                dunpacks
  .text.__aeabi_lmul
-                0x0000000010005668       0x32 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
-                0x0000000010005668                __wrap___aeabi_lmul
- *fill*         0x000000001000569a        0x2 
+                0x0000000010005664       0x32 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+                0x0000000010005664                __wrap___aeabi_lmul
+ *fill*         0x0000000010005696        0x2 
  .text.__wrap___aeabi_farithmetic
-                0x000000001000569c       0x48 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x000000001000569c                __wrap___aeabi_frsub
-                0x00000000100056a2                __wrap___aeabi_fsub
-                0x00000000100056a8                __wrap___aeabi_fadd
-                0x00000000100056ae                __wrap___aeabi_fdiv
-                0x00000000100056d6                __wrap___aeabi_fmul
+                0x0000000010005698       0x48 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x0000000010005698                __wrap___aeabi_frsub
+                0x000000001000569e                __wrap___aeabi_fsub
+                0x00000000100056a4                __wrap___aeabi_fadd
+                0x00000000100056aa                __wrap___aeabi_fdiv
+                0x00000000100056d2                __wrap___aeabi_fmul
  .text.__wrap___aeabi_cfcmple
-                0x00000000100056e4       0x50 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x00000000100056e4                __wrap___aeabi_cfrcmple
-                0x00000000100056f0                __wrap___aeabi_cfcmpeq
-                0x00000000100056f0                __wrap___aeabi_cfcmple
+                0x00000000100056e0       0x50 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x00000000100056e0                __wrap___aeabi_cfrcmple
+                0x00000000100056ec                __wrap___aeabi_cfcmpeq
+                0x00000000100056ec                __wrap___aeabi_cfcmple
  .text.__wrap___aeabi_fcmplt
-                0x0000000010005734        0xc CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x0000000010005734                __wrap___aeabi_fcmplt
+                0x0000000010005730        0xc CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x0000000010005730                __wrap___aeabi_fcmplt
  .text.__wrap___aeabi_fcmpgt
-                0x0000000010005740        0xa CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x0000000010005740                __wrap___aeabi_fcmpgt
+                0x000000001000573c        0xa CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x000000001000573c                __wrap___aeabi_fcmpgt
  .text.__wrap___aeabi_ui2f
-                0x000000001000574a        0xa CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x000000001000574a                __wrap___aeabi_ui2f
+                0x0000000010005746        0xa CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x0000000010005746                __wrap___aeabi_ui2f
  .text.__wrap___aeabi_i2f
-                0x0000000010005754       0x44 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x0000000010005754                __wrap___aeabi_i2f
+                0x0000000010005750       0x44 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x0000000010005750                __wrap___aeabi_i2f
  .text.__wrap___aeabi_f2iz
-                0x0000000010005798       0x4e CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x0000000010005798                __wrap___aeabi_f2iz
-                0x0000000010005798                float2int_z
- *fill*         0x00000000100057e6        0x2 
+                0x0000000010005794       0x4e CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x0000000010005794                __wrap___aeabi_f2iz
+                0x0000000010005794                float2int_z
+ *fill*         0x00000000100057e2        0x2 
  .text.float2int
-                0x00000000100057e8       0x14 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x00000000100057e8                float2int
+                0x00000000100057e4       0x14 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x00000000100057e4                float2int
  .text.__wrap___aeabi_f2uiz
-                0x00000000100057fc        0xc CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x00000000100057fc                __wrap___aeabi_f2uiz
+                0x00000000100057f8        0xc CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x00000000100057f8                __wrap___aeabi_f2uiz
  .text.__wrap___aeabi_f2d
-                0x0000000010005808       0x14 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x0000000010005808                __wrap___aeabi_f2d
+                0x0000000010005804       0x14 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x0000000010005804                __wrap___aeabi_f2d
  .text.__aeabi_float_init
-                0x000000001000581c       0x64 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
-                0x000000001000581c                __aeabi_float_init
+                0x0000000010005818       0x64 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x0000000010005818                __aeabi_float_init
  .text.float_table_shim_on_use_helper
-                0x0000000010005880       0x2c CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
-                0x0000000010005880                float_table_shim_on_use_helper
+                0x000000001000587c       0x2c CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+                0x000000001000587c                float_table_shim_on_use_helper
  .text.float232_shims
-                0x00000000100058ac       0x18 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
-                0x00000000100058ac                float2int_shim
-                0x00000000100058ae                float2fix_shim
+                0x00000000100058a8       0x18 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+                0x00000000100058a8                float2int_shim
+                0x00000000100058aa                float2fix_shim
  .text.float2double_shim
-                0x00000000100058c4       0x30 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
-                0x00000000100058c4                float2double_shim
- .text          0x00000000100058f4       0x10 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x00000000100058f4                __aeabi_mem_init
- .text.memset   0x0000000010005904        0xc CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x0000000010005904                __wrap_memset
- .text.memcpy   0x0000000010005910        0xc CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x0000000010005910                __wrap___aeabi_memcpy
-                0x0000000010005910                __wrap_memcpy
+                0x00000000100058c0       0x30 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+                0x00000000100058c0                float2double_shim
+ .text          0x00000000100058f0       0x10 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x00000000100058f0                __aeabi_mem_init
+ .text.memset   0x0000000010005900        0xc CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x0000000010005900                __wrap_memset
+ .text.memcpy   0x000000001000590c        0xc CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x000000001000590c                __wrap___aeabi_memcpy
+                0x000000001000590c                __wrap_memcpy
  .text.stdio_out_chars_no_crlf
-                0x000000001000591c       0x10 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010005918       0x10 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_out_chars_crlf
-                0x000000001000592c       0xb4 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010005928       0xb4 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_put_string.isra.0
-                0x00000000100059e0       0xfc CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x00000000100059dc       0xfc CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.__wrap_putchar
-                0x0000000010005adc       0x98 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010005adc                __wrap_putchar
+                0x0000000010005ad8       0x98 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010005ad8                __wrap_putchar
  .text.__wrap_puts
-                0x0000000010005b74       0x3c CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010005b74                __wrap_puts
+                0x0000000010005b70       0x3c CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010005b70                __wrap_puts
  .text.startup._retrieve_unique_id_on_boot
-                0x0000000010005bb0       0x10 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+                0x0000000010005bac       0x10 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
  .text.flash_get_unique_id
-                0x0000000010005bc0       0x40 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
-                0x0000000010005bc0                flash_get_unique_id
+                0x0000000010005bbc       0x40 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+                0x0000000010005bbc                flash_get_unique_id
  .text.core1_trampoline
-                0x0000000010005c00        0x4 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+                0x0000000010005bfc        0x4 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
  .text.core1_wrapper
-                0x0000000010005c04        0xc CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
-                0x0000000010005c04                core1_wrapper
+                0x0000000010005c00        0xc CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+                0x0000000010005c00                core1_wrapper
  .text.multicore_launch_core1_raw
-                0x0000000010005c10       0x84 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
-                0x0000000010005c10                multicore_launch_core1_raw
+                0x0000000010005c0c       0x84 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+                0x0000000010005c0c                multicore_launch_core1_raw
  .text.multicore_launch_core1
-                0x0000000010005c94       0x4c CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
-                0x0000000010005c94                multicore_launch_core1
+                0x0000000010005c90       0x4c CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+                0x0000000010005c90                multicore_launch_core1
  .text.i2c_set_baudrate
-                0x0000000010005ce0       0xc4 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
-                0x0000000010005ce0                i2c_set_baudrate
+                0x0000000010005cdc       0xc4 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+                0x0000000010005cdc                i2c_set_baudrate
  .text.i2c_init
-                0x0000000010005da4       0x54 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
-                0x0000000010005da4                i2c_init
+                0x0000000010005da0       0x54 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+                0x0000000010005da0                i2c_init
  .text.i2c_write_blocking
-                0x0000000010005df8       0xd0 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
-                0x0000000010005df8                i2c_write_blocking
+                0x0000000010005df4       0xd0 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+                0x0000000010005df4                i2c_write_blocking
  .text.i2c_read_blocking
-                0x0000000010005ec8       0xac CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
-                0x0000000010005ec8                i2c_read_blocking
+                0x0000000010005ec4       0xac CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+                0x0000000010005ec4                i2c_read_blocking
  .text.rtc_init
-                0x0000000010005f74       0x38 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_rtc/rtc.c.obj
-                0x0000000010005f74                rtc_init
+                0x0000000010005f70       0x38 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_rtc/rtc.c.obj
+                0x0000000010005f70                rtc_init
  .text.rtc_set_datetime
-                0x0000000010005fac       0xac CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_rtc/rtc.c.obj
-                0x0000000010005fac                rtc_set_datetime
+                0x0000000010005fa8       0xac CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_rtc/rtc.c.obj
+                0x0000000010005fa8                rtc_set_datetime
  .text.rtc_get_datetime
-                0x0000000010006058       0x44 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_rtc/rtc.c.obj
-                0x0000000010006058                rtc_get_datetime
+                0x0000000010006054       0x44 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_rtc/rtc.c.obj
+                0x0000000010006054                rtc_get_datetime
  .text.adc_init
-                0x000000001000609c       0x38 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
-                0x000000001000609c                adc_init
- .text          0x00000000100060d4       0x5c /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
-                0x00000000100060d4                strlen
+                0x0000000010006098       0x38 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
+                0x0000000010006098                adc_init
+ .text          0x00000000100060d0       0x5c /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
+                0x00000000100060d0                strlen
  *(.fini)
- .fini          0x0000000010006130        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
-                0x0000000010006130                _fini
- *fill*         0x0000000010006134        0x4 
- .fini.__stub   0x0000000010006138       0x80 linker stubs
+ .fini          0x000000001000612c        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+                0x000000001000612c                _fini
+ .fini.__stub   0x0000000010006130       0x80 linker stubs
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
@@ -2355,98 +2353,98 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
  *(.eh_frame*)
- .eh_frame      0x00000000100061b8        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
-                0x00000000100061b8                . = ALIGN (0x4)
+ .eh_frame      0x00000000100061b0        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x00000000100061b0                . = ALIGN (0x4)
 
-.glue_7         0x00000000100061b8        0x0
- .glue_7        0x00000000100061b8        0x0 linker stubs
+.glue_7         0x00000000100061b0        0x0
+ .glue_7        0x00000000100061b0        0x0 linker stubs
 
-.glue_7t        0x00000000100061b8        0x0
- .glue_7t       0x00000000100061b8        0x0 linker stubs
+.glue_7t        0x00000000100061b0        0x0
+ .glue_7t       0x00000000100061b0        0x0 linker stubs
 
-.vfp11_veneer   0x00000000100061b8        0x0
- .vfp11_veneer  0x00000000100061b8        0x0 linker stubs
+.vfp11_veneer   0x00000000100061b0        0x0
+ .vfp11_veneer  0x00000000100061b0        0x0 linker stubs
 
-.v4_bx          0x00000000100061b8        0x0
- .v4_bx         0x00000000100061b8        0x0 linker stubs
+.v4_bx          0x00000000100061b0        0x0
+ .v4_bx         0x00000000100061b0        0x0 linker stubs
 
-.iplt           0x00000000100061b8        0x0
- .iplt          0x00000000100061b8        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+.iplt           0x00000000100061b0        0x0
+ .iplt          0x00000000100061b0        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x00000000100061b8      0x31c
+.rodata         0x00000000100061b0      0x31c
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .rodata*)
  .rodata.display2Int.str1.4
-                0x00000000100061b8        0x3 CMakeFiles/electronic_load_pico.dir/i2c_lcd_lib.c.obj
- *fill*         0x00000000100061bb        0x1 
+                0x00000000100061b0        0x3 CMakeFiles/electronic_load_pico.dir/i2c_lcd_lib.c.obj
+ *fill*         0x00000000100061b3        0x1 
  .rodata.refreshDisplayCallback.str1.4
-                0x00000000100061bc       0x12 CMakeFiles/electronic_load_pico.dir/main.c.obj
- *fill*         0x00000000100061ce        0x2 
+                0x00000000100061b4       0x12 CMakeFiles/electronic_load_pico.dir/main.c.obj
+ *fill*         0x00000000100061c6        0x2 
  .rodata.bttTesterRefresh.str1.4
-                0x00000000100061d0        0x8 CMakeFiles/electronic_load_pico.dir/main.c.obj
+                0x00000000100061c8        0x8 CMakeFiles/electronic_load_pico.dir/main.c.obj
  .rodata.hardware_alarm_claim.str1.4
-                0x00000000100061d8       0x22 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- *fill*         0x00000000100061fa        0x2 
+                0x00000000100061d0       0x22 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ *fill*         0x00000000100061f2        0x2 
  .rodata.panic.str1.4
-                0x00000000100061fc       0x12 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- *fill*         0x000000001000620e        0x2 
+                0x00000000100061f4       0x12 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ *fill*         0x0000000010006206        0x2 
  .rodata.hard_assertion_failure.str1.4
-                0x0000000010006210        0xc CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010006208        0xc CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
  .rodata._ftoa.str1.4
-                0x000000001000621c       0x15 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- *fill*         0x0000000010006231        0x3 
+                0x0000000010006214       0x15 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ *fill*         0x0000000010006229        0x3 
  .rodata._vsnprintf
-                0x0000000010006234      0x1e0 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- *fill*         0x0000000010006414        0x4 
+                0x000000001000622c      0x1e0 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ *fill*         0x000000001000640c        0x4 
  .rodata.pow10.0
-                0x0000000010006418       0x50 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010006410       0x50 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .rodata.str1.4
-                0x0000000010006468       0x44 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010006460       0x44 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
                                          0x4c (size before relaxing)
  .rodata.__bi_44
-                0x00000000100064ac        0xc CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x00000000100064a4        0xc CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_75
-                0x00000000100064b8        0xc CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x00000000100064b0        0xc CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_81
-                0x00000000100064c4        0xc CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x00000000100064bc        0xc CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.crlf_str.0
-                0x00000000100064d0        0x2 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x00000000100064d4                . = ALIGN (0x4)
- *fill*         0x00000000100064d2        0x2 
+                0x00000000100064c8        0x2 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x00000000100064cc                . = ALIGN (0x4)
+ *fill*         0x00000000100064ca        0x2 
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.flashdata*)))
-                0x00000000100064d4                . = ALIGN (0x4)
+                0x00000000100064cc                . = ALIGN (0x4)
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x00000000100064d4                __exidx_start = .
+                0x00000000100064cc                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x00000000100064d4                __exidx_end = .
-                0x00000000100064d4                . = ALIGN (0x4)
-                0x00000000100064d4                __binary_info_start = .
+                0x00000000100064cc                __exidx_end = .
+                0x00000000100064cc                . = ALIGN (0x4)
+                0x00000000100064cc                __binary_info_start = .
 
-.binary_info    0x00000000100064d4       0x1c
+.binary_info    0x00000000100064cc       0x1c
  *(.binary_info.keep.*)
  .binary_info.keep.__bi_ptr22
-                0x00000000100064d4        0x4 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x00000000100064cc        0x4 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr30
-                0x00000000100064d8        0x4 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x00000000100064d0        0x4 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr38
-                0x00000000100064dc        0x4 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x00000000100064d4        0x4 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr44
-                0x00000000100064e0        0x4 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x00000000100064d8        0x4 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr50
-                0x00000000100064e4        0x4 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x00000000100064dc        0x4 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr75
-                0x00000000100064e8        0x4 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x00000000100064e0        0x4 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr81
-                0x00000000100064ec        0x4 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x00000000100064e4        0x4 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  *(.binary_info.*)
-                0x00000000100064f0                __binary_info_end = .
+                0x00000000100064e8                __binary_info_end = .
 
-.rel.dyn        0x00000000100064f0        0x0
- .rel.iplt      0x00000000100064f0        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
-                0x00000000100064f0                . = ALIGN (0x4)
+.rel.dyn        0x00000000100064e8        0x0
+ .rel.iplt      0x00000000100064e8        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x00000000100064e8                . = ALIGN (0x4)
 
 .ram_vector_table
                 0x0000000020000000       0xc0
@@ -2455,7 +2453,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
                 0x0000000020000000       0xc0 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
                 0x0000000020000000                ram_vector_table
 
-.data           0x00000000200000c0      0x3f0 load address 0x00000000100064f0
+.data           0x00000000200000c0      0x3f0 load address 0x00000000100064e8
                 0x00000000200000c0                __data_start__ = .
  *(vtable)
  *(.time_critical*)
@@ -2515,8 +2513,9 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  .data.config_reg
                 0x00000000200003cc        0x4 CMakeFiles/electronic_load_pico.dir/ads1015_lib.c.obj
                 0x00000000200003cc                config_reg
- .data.gain05v  0x00000000200003d0        0x4 CMakeFiles/electronic_load_pico.dir/ads1015_lib.c.obj
-                0x00000000200003d0                gain05v
+ .data.gain0256v
+                0x00000000200003d0        0x4 CMakeFiles/electronic_load_pico.dir/ads1015_lib.c.obj
+                0x00000000200003d0                gain0256v
  .data.setTime  0x00000000200003d4        0x8 CMakeFiles/electronic_load_pico.dir/main.c.obj
                 0x00000000200003d4                setTime
  .data.striped_spin_lock_num
@@ -2582,36 +2581,36 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  *(.jcr)
                 0x00000000200004b0                . = ALIGN (0x4)
                 0x00000000200004b0                __data_end__ = .
-                0x00000000100064f0                __etext = LOADADDR (.data)
+                0x00000000100064e8                __etext = LOADADDR (.data)
 
 .tm_clone_table
-                0x00000000200004b0        0x0 load address 0x00000000100068e0
+                0x00000000200004b0        0x0 load address 0x00000000100068d8
  .tm_clone_table
                 0x00000000200004b0        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
  .tm_clone_table
                 0x00000000200004b0        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
 
-.igot.plt       0x00000000200004b0        0x0 load address 0x00000000100068e0
+.igot.plt       0x00000000200004b0        0x0 load address 0x00000000100068d8
  .igot.plt      0x00000000200004b0        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
 
 .uninitialized_data
-                0x00000000200004b0        0x0 load address 0x00000000100068e0
+                0x00000000200004b0        0x0 load address 0x00000000100068d8
                 0x00000000200004b0                . = ALIGN (0x4)
  *(.uninitialized_data*)
 
-.scratch_x      0x0000000020040000        0x0 load address 0x00000000100068e0
+.scratch_x      0x0000000020040000        0x0 load address 0x00000000100068d8
                 0x0000000020040000                __scratch_x_start__ = .
  *(.scratch_x.*)
                 0x0000000020040000                . = ALIGN (0x4)
                 0x0000000020040000                __scratch_x_end__ = .
-                0x00000000100068e0                __scratch_x_source__ = LOADADDR (.scratch_x)
+                0x00000000100068d8                __scratch_x_source__ = LOADADDR (.scratch_x)
 
-.scratch_y      0x0000000020041000        0x0 load address 0x00000000100068e0
+.scratch_y      0x0000000020041000        0x0 load address 0x00000000100068d8
                 0x0000000020041000                __scratch_y_start__ = .
  *(.scratch_y.*)
                 0x0000000020041000                . = ALIGN (0x4)
                 0x0000000020041000                __scratch_y_end__ = .
-                0x00000000100068e0                __scratch_y_source__ = LOADADDR (.scratch_y)
+                0x00000000100068d8                __scratch_y_source__ = LOADADDR (.scratch_y)
 
 .bss            0x00000000200004b0      0x518
                 0x00000000200004b0                . = ALIGN (0x4)
@@ -2724,8 +2723,8 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  *(.stack*)
  .stack         0x0000000020041000      0x800 CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
-.flash_end      0x00000000100068e0        0x0
-                0x00000000100068e0                PROVIDE (__flash_binary_end = .)
+.flash_end      0x00000000100068d8        0x0
+                0x00000000100068d8                PROVIDE (__flash_binary_end = .)
                 0x0000000020040000                __StackLimit = (ORIGIN (RAM) + LENGTH (RAM))
                 0x0000000020041000                __StackOneTop = (ORIGIN (SCRATCH_X) + LENGTH (SCRATCH_X))
                 0x0000000020042000                __StackTop = (ORIGIN (SCRATCH_Y) + LENGTH (SCRATCH_Y))
@@ -2810,7 +2809,7 @@ LOAD CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_co
 LOAD CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
 LOAD CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_rtc/rtc.c.obj
 LOAD CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
-LOAD /tmp/ccAZs9Gr.o
+LOAD /tmp/cc4zcGJc.o
 LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libstdc++.a
 LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
 START GROUP
@@ -2918,7 +2917,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x00000000000006f8       0x2c CMakeFiles/electronic_load_pico.dir/home/pedrohcs8/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
  .ARM.attributes
-                0x0000000000000724       0x22 /tmp/ccAZs9Gr.o
+                0x0000000000000724       0x22 /tmp/cc4zcGJc.o
  .ARM.attributes
                 0x0000000000000746       0x1e /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .ARM.attributes

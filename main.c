@@ -95,7 +95,7 @@ void refreshDisplayCallback() {
   float volts = adc_read() * (3.3f  / (1 << 12)) * 10;
 
   if (volts > 6) {
-    long pwm_value = map(display_amps_reading, 0, 2000, 0, 255);
+    long pwm_value = map(display_amps_reading, 0, 1500, 0, 255);
     pwm_set_chan_level(0, PWM_CHAN_A, pwm_value);
   } else {
     pwm_set_chan_level(0, PWM_CHAN_A, 0);
@@ -222,10 +222,10 @@ int main() {
 
     // send information to display core
     if (recursive_mutex_try_enter(&writeDisplayMutex, &owner_out)) {
-      setCompareMode(comparate0_1, gain05v);
+      setCompareMode(comparate0_1, gain0256v);
       while(!conversionReady());
 
-      amps_reading = computeVolts(readConversionReg()) / 0.0035;
+      amps_reading = computeVolts(readConversionReg()) / 0.0038;
 
       current = amps_reading;
       mutexCurrent = true;
@@ -234,10 +234,10 @@ int main() {
     }
 
     if (!mutexCurrent) {
-      setCompareMode(comparate0_1, gain05v);
+      setCompareMode(comparate0_1, gain0256v);
       while(!conversionReady());
 
-      current = computeVolts(readConversionReg()) / 0.0035;
+      current = computeVolts(readConversionReg()) / 0.0038;
     }
 
     int mA_setpoint = amp_setting * 1000;
@@ -254,7 +254,7 @@ int main() {
 
     if (amp_setting == 0) {
       writeDec(0);
-      dac_value = 0;
+      dac_value = 600;
     }
 
     // with opamp
